@@ -1,5 +1,11 @@
 name: Release alpha version on demand
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to release from'
+        required: true
+        default: 'main'
 jobs:
   release-alpha:
     runs-on: ubuntu-latest
@@ -35,5 +41,5 @@ jobs:
       - name: execute release-alpha action
         uses: ./.github/actions/release-alpha
         with:
-          npm_token: ${{ secrets.NPM_TOKEN_GRANULAR_ACCESS }}
+          npm_token: ${{ secrets.NPM_TOKEN }}
           github_token: ${{ steps.app-token.outputs.token }}
