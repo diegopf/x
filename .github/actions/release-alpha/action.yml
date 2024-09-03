@@ -10,6 +10,12 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - name: Configure git user
+      run: |
+        git config --local user.email diegopf@users.noreply.github.com"
+        git config --local user.name "diegopf"
+      shell: bash
+
     - name: Configure npm auth
       run: |
         npm config set registry="https://registry.npmjs.org/"
