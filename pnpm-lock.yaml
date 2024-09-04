@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -21505,7 +21505,6 @@ packages:
     resolution: { directory: packages/eslint-plugin-x, type: directory }
     id: file:packages/eslint-plugin-x
     name: '@empathyco/eslint-plugin-x'
-    version: 2.0.2
     engines: { node: '>=18' }
     peerDependencies:
       eslint: ~8.32.0
