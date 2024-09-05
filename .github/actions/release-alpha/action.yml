@@ -4,9 +4,6 @@ inputs:
   npm_token:
     description: Token to push code to npm
     required: true
-  github_token:
-    description: Token to push code to github
-    required: true
 runs:
   using: 'composite'
   steps:
