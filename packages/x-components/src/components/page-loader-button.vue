@@ -8,7 +8,7 @@
     <slot v-bind="{ resultsLength, totalResults }">
       <!-- @slot Rendered count with a text and the number of results displayed & remaining. -->
       <slot name="textContent" :resultsLength="resultsLength" :totalResults="totalResults">
-        <p class="x-text x-py-16" data-test="text-content">
+        <p class="x-text x-py-8" data-test="text-content">
           You are seeing {{ resultsLength }} of {{ totalResults }} results
         </p>
       </slot>
